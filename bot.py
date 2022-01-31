@@ -18,6 +18,7 @@ mytext2 = "Вп на сегодня или на ближайшие числа \n
 @client.on(events.NewMessage(chats=mychan))
 async def my_event_handler(event):
         print('bot started')
+        await client.send_message('me', "Запустил")
         while True:
                 cur = datetime.datetime.now()
                 if ((cur.hour==15 or cur.hour==17 or cur.hour==19 or cur.hour==21 or cur.hour==23 or cur.hour==1) and (cur.minute==1 and cur.second==0 and cur.microsecond<50000)):
