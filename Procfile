@@ -1,2 +1,1 @@
-web: python3 bot.py
---bind :$PORT
+worker: python bot.py
