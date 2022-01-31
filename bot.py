@@ -21,7 +21,7 @@ async def my_event_handler(event):
         await client.send_message('me', "Запустил")
         while True:
                 cur = datetime.datetime.now()
-                if ((cur.hour==15 or cur.hour==17 or cur.hour==19 or cur.hour==21 or cur.hour==23 or cur.hour==1) and (cur.minute==1 and cur.second==0 and cur.microsecond<50000)):
+                if ((cur.hour==15 or cur.hour==17 or cur.hour==19 or cur.hour==21 or cur.hour==23 or cur.hour==1) and (cur.minute==36 and cur.second==0 and cur.microsecond<50000)):
                         await client.send_message(1137499852, mytext1)
                         await client.send_message(1541722817, mytext1)
                         await client.send_message(1284298470, mytext1)
